@@ -35,8 +35,27 @@ document.addEventListener('turbolinks:load', function(){
 })
 
 
+// sweetalert2
 import Swal from 'sweetalert2';
 
 document.addEventListener('turbolinks:load', function(){
-  Swal.fire('Any fool can use a computer');
+
+  document.querySelector('.js-submit-btn').addEventListener('click', function(e){
+    e.preventDefault();
+
+    Swal.fire({
+      title: 'Do you want to save the changes?',
+      showCancelButton: true,
+      confirmButtonText: `Save`,
+    }).then((result) => {
+      console.log(result)
+      if (result.isConfirmed) {
+        Swal.fire({
+          title: 'Loading...',
+          showConfirmButton: false,
+        })
+        document.querySelector('form').submit();
+      }
+    })
+  })
 })
