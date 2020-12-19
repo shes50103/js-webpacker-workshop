@@ -33,3 +33,10 @@ document.addEventListener('turbolinks:load', function(){
     placeholder: 'select an option'
   });
 })
+
+
+import Swal from 'sweetalert2';
+
+document.addEventListener('turbolinks:load', function(){
+  Swal.fire('Any fool can use a computer');
+})
