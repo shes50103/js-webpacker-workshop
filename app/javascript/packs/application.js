@@ -59,3 +59,7 @@ document.addEventListener('turbolinks:load', function(){
     })
   })
 })
+
+import 'tempusdominus-bootstrap-4'
+import 'tempusdominus-bootstrap-4/build/css/tempusdominus-bootstrap-4.min.css'
+import 'font-awesome/css/font-awesome.min.css'
