@@ -33,3 +33,16 @@
 <br>
 
 <%= link_to 'New Product', new_product_path, class: 'btn btn-info' %>
+
+
+<select class="js-example-basic-single" name="state">
+  <option value="AL">Alabama</option>
+  <option value="WY">Wyoming</option>
+</select>
+
+
+<script>
+  $(document).ready(function() {
+    $('.js-example-basic-single').select2();
+  });
+</script>
