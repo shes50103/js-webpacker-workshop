@@ -19,7 +19,17 @@ import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 
 import $ from 'jquery';
+
+// select2
 import 'select2';
 import 'select2/dist/css/select2.css';
 
 window.$ = $;
+
+document.addEventListener('turbolinks:load', function(){
+  $('select[name="product[currency]"]').select2();
+  $('select[name="product[tag_list][]"]').select2({
+    tags: true,
+    placeholder: 'select an option'
+  });
+})
