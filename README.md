@@ -11,9 +11,9 @@
 
 - workshop 中可以用以下套件
   - [Bootstrap@4.5.2](https://yarnpkg.com/package/bootstrap)
-  - [datetimepicker@5.1.2](https://yarnpkg.com/package/tempusdominus-bootstrap-4)
+  - [datetimepicker@5.39.0](https://yarnpkg.com/package/tempusdominus-bootstrap-4)
   - [select2@4.0.13](https://yarnpkg.com/package/select2)
-  - [sweetalert2@9.17.1](https://yarnpkg.com/package/sweetalert2)
+  - [sweetalert2@10.12.5](https://yarnpkg.com/package/sweetalert2)
 
 - 裝這些套件可能會有相依性問題，所以可能要額外 `yarn add` 其他套件
 
@@ -22,6 +22,8 @@
 - Task1 到 Task3 不一定要照順序做，其中 `datetimepicker` 可能比較難裝，可以最後處理
 
 - 任務描述不清楚可以參考[範例網站](https://js-workshop-0216002.herokuapp.com/)
+
+- [Webpack 筆記](https://hackmd.io/10wfeoedToONL7oqd8BLfg?view)
 
 ## 任務清單
 ### Task0：用 Bootstrap 美化頁面
@@ -36,13 +38,7 @@
 - [ ] new/edit 頁面美化
   - 風格不限，有美化就好
 
-### Task1：用 datetimepicker 美化頁面
-
-- [ ] 將 datetimepicker 套用在表單的 Start at、End at 欄位上
-  - Start at 必須早於 End at
-  - End at 必須晚於 Start at
-
-### Task2：用 select2 美化頁面
+### Task1：用 select2 美化頁面
 
 - [ ] 美化下拉選單，套用在表單的 Currency 欄位
   - 顏色不限，有美化就好
@@ -57,5 +53,11 @@
   - 按 Cancel 關閉提示視窗
   - 按 OK 進入 Loading 提示視窗，並送出表單
 
+### Task3：用 datetimepicker 美化頁面
+
+- [ ] 將 datetimepicker 套用在表單的 Start at、End at 欄位上
+  - Start at 必須早於 End at
+  - End at 必須晚於 Start at
+  
 ### Task4：將專案部署到 Heroku
 - [ ] 恭喜完成 JS workshop
