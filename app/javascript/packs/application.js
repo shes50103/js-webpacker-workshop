@@ -68,8 +68,12 @@ import 'tempusdominus-bootstrap-4/build/css/tempusdominus-bootstrap-4.min.css'
 import 'font-awesome/css/font-awesome.min.css'
 
 document.addEventListener('turbolinks:load', function(){
-  $('#start_at').datetimepicker();
-  $('#end_at').datetimepicker();
+  $('#start_at').datetimepicker({
+    format: 'YYYY/MM/DD'
+  });
+  $('#end_at').datetimepicker({
+    format: 'YYYY/MM/DD'
+  });
 
   $("#start_at").on("change.datetimepicker", function (e) {
     $('#end_at').datetimepicker('minDate', e.date);
